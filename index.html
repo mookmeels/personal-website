@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iNKOBAN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <nav class="navbar navbar-expand-lg">
+    <div class="navbar-bg container-fluid">
+      <div class="home">
+        <a href="#top" class="navbar-left" id="inkoban">
+          <img src="assets/win98/inko.png" height="48" width="48" />
+          <h1>
+            <b><u>iNKOBAN</u></b>
+          </h1>
+        </a>
+      </div>
+      <a href="#aboutme">
+        <button type="button" class="mybtn mybtn-nav">Jump!</button></a
+      >
+      <div class="padding"></div>
+      <button
+        class="navbar-toggler mybtn"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#mission">
+              <button type="button" class="mybtn mybtn-nav">Mission</button></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#skills">
+              <button type="button" class="mybtn mybtn-nav">Skills</button></a
+            >
+          </li>
+          <li class="nav-item mybtn-split dropdown">
+            <a href="#projects">
+              <button type="button" class="mybtn">Projects</button></a
+            >
+            <a
+              class="nav-link dropdown-toggle mybtn mybtn-dropdown"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Website</a></li>
+              <li><a class="dropdown-item" href="#">Programs</a></li>
+              <li><a class="dropdown-item" href="#">Writings</a></li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contactme">
+              <button type="button" class="mybtn mybtn-nav">
+                Contact Me!
+              </button></a
+            >
+          </li>
+          <li class="nav-item dropdown mybtn-split">
+            <a href="#projects">
+              <button type="button" class="mybtn">Other</button></a
+            >
+            <a
+              class="nav-link dropdown-toggle mybtn mybtn-dropdown"
+              href="#other"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Philosophies</a></li>
+              <li><a class="dropdown-item" href="#">Musings</a></li>
+              <li><a class="dropdown-item" href="#">Balls</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Site Settings</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <!--
+      <div id="quotebox">
+        <h1 class="hero-text" id="quote">
+          A general dissolution of principles and manners will more surely
+          overthrow the liberties of America than the whole force of the
+          common enemy.
+        </h1>
+        <h2 class="hero-text" id="author"><i>- Samuel Adams</i></h2>
+      </div>
+    -->
+    <section class="master-container">
+      <div class="hero-container-container" id="top">
+        <div class="hero-container">
+          <div class="hero-box" id="pfp-box">
+            <div id="da-king">
+              <img
+                src="assets/thegrind.jpg"
+                id="da-pfp"
+                style="max-width: 384"
+              />
+            </div>
+            <h1>Andrew Nguyen</h1>
+            <h4><i>HELP HELP HELP HELP</i></h4>
+          </div>
+          <!--
+          <div class="hero-box" id="hero-carousel">
+            <h1></h1>
+            <div id="carouselJunior" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="assets/carousel/jrface.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5><b>7/7/01, Pepsi 400 @ Daytona</b></h5>
+                    <p>Just months after his father passed away at the Daytona 500, 
+                      Dale Earnhardt Jr. leads 116 out of 160 laps to conquer the very same track to a roaring 180,000 new fans.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/carousel/dover2001.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5><b>9/23/01, MBNA Cal Ripken Jr. 400 @ Dover</b></h5>
+                    <p>In the first premier series race after the 9/11 attacks, 
+                      the image of Junior doing his burnout while holding an American flag gives a brief reprieve for thousands.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/carousel/talladega.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5><b>11/21/01, EA Sports 500 @ Talladega</b></h5>
+                    <p>
+                      Dale's third and final win of 2001 would be at the same track his father had won 10 times before.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselJunior" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselJunior" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+            <script>
+              var myCarousel = new bootstrap.Carousel(document.querySelector('#carouselJunior'), {
+                interval: 8000,
+                wrap: true
+              });
+            </script>
+          </div>
+          -->
+        </div>
+      </div>
+      <section class="bigboy-container">
+        <span class="main-container">
+          <marqee id="tickerbox" class="body-container superslim-container">
+            <div class="text-container">
+              <h1 class="text-center">WELCOME TO THE ZOOOONE!</h1>
+              <hr>
+              <h4 class="text-center">
+                <b>Congratulations to the 2002 Daytona 500 winner, Ward Burton!</b>
+              </h4>
+              <div class="blinkiespam"> 
+                <!--conversion to webp to hopefully minimize load times. love you ffmpeg-->
+                <img src="assets/gifs/animeland.webp" />
+                <a href="https://flashpointarchive.org"><img src="assets/gifs/adobe_getflash2.webp"/></a>
+                <img src="assets/gifs/aol-sucks.webp"/>
+                <img src="assets/gifs/chrmevil.webp"/>
+                <img src="assets/gifs/2hu.webp"/>
+                <img src="assets/gifs/winamp3.webp"/>
+                <img src="assets/gifs/2001animated_button.webp"/>
+                <img src="assets/gifs/z3r0s.webp"/>
+                <img src="assets/gifs/any88x31.webp"/>
+                <img src="assets/gifs/valid-html5.webp"/>
+              </div>
+            </div>            
+          </marqee>
+          <div class="body-container slim-container aboutme-container" id="aboutme">
+            <h1 class="importanttitle">About Me</h1>
+            <hr class="verticalrule" />
+            <div class="text-container">
+              <p>
+                Hello! My name is Andrew Nguyen, and I'm majoring in Computer Engineering over at University of Nevada, Las Vegas, with a double-minor in Philosophy and Math. I've been tinkering around with computers ever since I was four and floating around. I'm a top-down system thinker, bottom-up learner... 
+              </p>
+            </div>
+          </div>
+          <div
+            class="body-container fat-container half-container mission-container"
+            id="mission"
+          >
+            <h1 class="text-center col-12">My Mission</h1>
+            <p class="text-center">HELP</p>
+            <div class="collapse-container">
+              <div class="mission-element" id="mission-element-right">
+                <p class="text-center">
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="skills" class="body-container half-container skills-container">
+            <h1 class="text-center">Skills</h1>
+            <p class="text-center">Here's how you flex your muscles a little bit.</p>
+            <div class="flexwrap-container"> <!--lol-->
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="skill-card">
+                    <img src="assets/gifs/my-husband.webp" alt="HTML">
+                    <h4>HTML</h4>
+                    <p>Structuring the web's content using modern semantic HTML.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="skill-card">
+                      <img src="assets/gifs/my-husband.webp" alt="CSS">
+                      <h4>CSS</h4>
+                      <p>Brushing up these designs properly using modern CSS.</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="skill-card">
+                      <img src="assets/gifs/my-husband.webp" alt="Bootstrap">
+                      <h4>Bootstrap</h4>
+                      <p>Rapidly breaking up my own responsive websites using the web's most popular framework.</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="skill-card">
+                      <img src="assets/gifs/my-husband.webp" alt="JavaScript">
+                      <h4>JavaScript</h4>
+                      <p>JavaScript :)</p>
+                  </div>
+              </div>
+            </div>
+            <div class="padding" id="navbarpadder"></div>
+            <button href="" class="mybtn mybtn-body">See more...</button>
+          </div>
+          <div id="projects" class="body-container fat-container projects-container">
+            <h1 class="text-center">Projects</h1>
+            <p class="text-center">Here lies my projects, a muse never used. 
+              A collection built with my own bare hands - you know, this is the kind of stuff that keeps brains alive. Doing projects, that is.</p>
+            <div class="projects-links-container">
+              <a
+                ><button type="button" class="mybtn mybtn-img-card ">
+                  <img src="assets/thegrind.jpg" style="width: 100%" />
+                  <h3 style="font-family: Windows Regular; font-weight: bold">
+                    Websites
+                  </h3>
+                  <h1 id="stupidarrow-down">v</h1>
+                </button></a
+              >
+              <a
+                ><button type="button" class="mybtn mybtn-img-card">
+                  <img src="assets/thegrind.jpg" style="width: 100%" />
+                  <h3 style="font-family: Windows Regular; font-weight: bold">
+                    Programs
+                  </h3>
+                  <h1 id="stupidarrow-down">v</h1>
+                </button></a
+              >
+              <a
+                ><button type="button" class="mybtn mybtn-img-card">
+                  <img src="assets/thegrind.jpg" style="width: 100%" />
+                  <h3 style="font-family: Windows Regular; font-weight: bold">
+                    Writings
+                  </h3>
+                  <h1 id="stupidarrow-down">v</h1>
+                </button></a
+              >
+              <a
+                ><button
+                  type="button"
+                  class="mybtn mybtn-img-card"
+                  href="./thegrind/"
+                >
+                  <img src="assets/thegrind.jpg" style="width: 100%" />
+                  <h3 style="font-family: Windows Regular; font-weight: bold">
+                    Other
+                  </h3>
+                  <h1 id="stupidarrow-down">v</h1>
+                </button></a
+              >
+            </div>
+            <div class="padding" id="navbarpadder"></div>
+            <button href="" class="mybtn mybtn-body">See more...</button>
+          </div>
+          <article class="body-container first-container" id="first">
+            <h1>Test of the 1st space</h1>
+            <div class="text-container">
+              <p>
+                Personally, I really believe that web design was better when
+                everything looked a lot more uglier, cluttered, and
+                information-dense. Long live Y2K...responsibly!
+                そんなお気に入りの服を長女に貸すことになったのは7年ほど前。13歳だった娘が夜スタートのお誕生会に生まれて初めて招かれた際、「着ていく服がない」と悲嘆に暮れていた姿を目にし、これならピッタリではないかと渡してあげたそうです。
+                中村さんは、自身の衣服を着こなした大人っぽい長女がどこか固めな表情でカメラを見つめた当時の写真を投稿。
+              </p>
+            </div>
+            <hr />
+            <h1>Test of the 2nd space</h1>
+            <div class="text-container">
+              <p>
+                There is no difference between a man who doesn't try and a man
+                who can't try.
+                「春には21歳になる長女の、13歳の時のこの写真がなぜかとても好きなのです」と、すっかり大人になった娘の今と比べる形で、どこかノスタルジックな気持ちをコメントしたのでした。
+                「きっと彼女的には嬉しくも、もっと“イケイケ”なスタイルが良かったのでしょうね」「私にしょうがなく付き合ってくれた感じの写真が撮れました」とセルフツッコミを連発しつつ、別の個所では「『とうとう、私の服を着られるくらいに大きくなってしまった』と、記憶に残っている日」とも語り、ちょっぴりしんみりとした心情をあらわに。
+                なお中村さんの長女は13歳のときに母親の服を着られるほど成長しましたが、同時期には母親の背まで抜いていたことが明らかとなっています。
+              </p>
+            </div>
+            <div class="padding" id="navbarpadder"></div>
+            <button class="mybtn mybtn-body">See more...</button>
+          </article>
+          <div id="second" class="body-container writings-container">
+            <h1>HELP</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              ultricies aliquam laoreet. Praesent at luctus lorem. Nam pulvinar
+              tortor quis odio gravida vehicula. Phasellus et quam dignissim,
+              vulputate urna a, finibus justo. Quisque nec dolor vitae lectus
+              tempor dapibus nec sed felis. Integer auctor commodo condimentum.
+            </p>
+            <div class="quotebox2">
+              <p>
+                Suspendisse ut posuere ex. Nulla placerat ultricies nisl, ac
+                pharetra diam. Nunc dignissim sapien ultricies nunc pulvinar,
+                sit amet mollis metus mollis. Cras cursus turpis sed massa
+                consectetur fermentum. Nam ornare nisl nisi, nec gravida nunc
+                dapibus ac. Interdum et malesuada fames ac ante ipsum primis in
+                faucibus. Maecenas suscipit erat nec purus malesuada, nec cursus
+                lorem aliquam. In tristique, velit at pretium rhoncus, ipsum leo
+                sodales arcu, fermentum faucibus tortor nisl vitae lacus. Donec
+                eu aliquam ipsum.
+              </p>
+            </div>
+            <p>
+              Cras vehicula magna a sodales euismod. Cras sit amet est luctus,
+              bibendum ante eu, egestas nisl. Aliquam sit amet ligula mauris.
+              Cras ut massa elit. Mauris laoreet luctus neque, ut cursus elit
+              mattis id!
+            </p>
+            <div class="padding"></div>
+            <button class="mybtn mybtn-body">See more...</button>
+          </div>
+
+          <div id="other" class="body-container other-container">
+            <h1>Other</h1>
+            <hr />
+            <a
+              ><button type="button" class="mybtn mybtn-img-small">
+                <img src="assets/thegrind.jpg"">Philosophies
+                <h1 id="stupidarrow">></h1>
+              </button></a
+            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              ultricies aliquam laoreet. Praesent at luctus lorem. Nam pulvinar
+              tortor quis odio gravida vehicula. Phasellus et quam dignissim,
+              vulputate urna a, finibus justo. Quisque nec dolor vitae lectus
+              tempor dapibus nec sed felis. In tristique, velit at pretium
+              rhoncus, ipsum leo sodales arcu, fermentum faucibus tortor nisl
+              vitae lacus. Donec eu aliquam ipsum.
+            </p>
+            <hr />
+            <a
+              ><button type="button" class="mybtn mybtn-img-small">
+                <img src="assets/thegrind.jpg"">Musings
+                <h1 id="stupidarrow">></h1>
+              </button></a
+            >
+            <p>
+              Cras vehicula magna a sodales euismod. Cras sit amet est luctus,
+              bibendum ante eu, egestas nisl. Aliquam sit amet ligula mauris.
+              Cras ut massa elit. Mauris laoreet luctus neque, ut cursus elit
+              mattis id! Integer auctor commodo condimentum. Suspendisse ut
+              posuere ex.
+            </p>
+            <hr />
+            <a
+              ><button
+                type="button"
+                class="mybtn mybtn-img-small"
+                href="./thegrind/"
+              >
+                <img src="assets/thegrind.jpg" />Balls
+                <h1 id="stupidarrow">></h1>
+              </button></a
+            >
+            <p>
+              Nulla placerat ultricies nisl, ac pharetra diam. Nunc dignissim
+              sapien ultricies nunc pulvinar, sit amet mollis metus mollis. Cras
+              cursus turpis sed massa consectetur fermentum. Nam ornare nisl
+              nisi, nec gravida nunc dapibus ac. Interdum et malesuada fames ac
+              ante ipsum primis in faucibus. Maecenas suscipit erat nec purus
+              malesuada, nec cursus lorem aliquam.
+            </p>
+            <div class="padding"></div>
+            <button class="mybtn mybtn-body">See more...</button>
+          </div>
+          <span class="body-container d-flex align-items-center justify-content-center text-center" style="padding: 3rem 1rem;">
+            <div id="crying-container">
+              <h1 class="display-1 text-danger fw-bold">😭</h1>
+              <h2 class="fw-light text-muted">giving up in progress...</h2>
+              <p class="text-danger">longest breakdown: <span id="high-score">0</span> seconds</p>
+              <button class="mybtn btn-primary btn-lg mt-3" onclick="startCrying()">start breakdown</button>
+            </div>
+            <script>
+              let timer; // store the interval
+              let seconds = 0;
+              let highScore = localStorage.getItem("cryHighScore") || 0; // store longest breakdown
+              document.getElementById("high-score").innerText = highScore;
+
+              const cryingDiv = document.getElementById("crying-container");
+              function startCrying() {
+                cryingDiv.innerHTML = `
+                  <div class="container d-flex align-items-center justify-content-center text-center">
+                    <div>
+                      <h1 class="display-1 text-primary fw-bold">😩😭😭😭</h1>
+                      <h2 class="fw-light text-muted">you're now fully committed to crying...</h2>
+                      <p class="text-secondary">duration: <span id="timer">0 seconds</span></p>
+                      <p class="text-danger">longest breakdown: <span id="high-score">${highScore}</span> seconds</p>
+                      <button class="mybtn btn-lg mt-3" onclick="cancelCrying()">big girls don't cry!</button>
+                    </div>
+                  </div>`;
+                  
+                  //if timer already exists, clear it first (prevents multiple intervals)
+                  if (timer) clearInterval(timer);
+
+                  //start counting the seconds of emotional devastation
+                  timer = setInterval(() => {
+                    document.getElementById("timer").innerText = `${++seconds} seconds`;
+                  }, 1000);
+            
+                  window.cancelCrying = function() {
+                    clearInterval(timer);
+                    if (seconds > highScore) {
+                      highScore = seconds; // update high score
+                      localStorage.setItem("cryHighScore", highScore); // save to browser storage
+                    }
+                    seconds = 0; //RESET TIMER bc we're ✨emotionally stable✨ now 😭💀
+                    cryingDiv.innerHTML = `
+                      <h1 class="display-1 text-success fw-bold">✨🙂✨</h1>
+                      <h2 class="fw-light text-muted">everything's okay!! NOTHING IS WRONG QUEEN NEVER CRY</h2>
+                      <p class="text-danger">longest breakdown: <span id="high-score">${highScore}</span> seconds</p>
+                      <button class="mybtn btn-primary btn-lg mt-3" onclick="startCrying()">start another breakdown</button>
+                    `;
+                  }
+              }
+            </script>
+          </span>
+          <div
+            class="body-container fat-container contactme-container"
+            id="contactme"
+          >
+            <h1 class="text-center">Contact Me</h1>
+            <div class="flexwrap-container">
+              <div class="skill-card contact-card" id="fuckyou">
+                <button class="mybtn-contact" id="fuckyou">
+                  <a><h1 class="bicon bi-linkedin"></h1></a>
+                </button>
+                <h3><s>LinkedIn</s></h3>
+                <p>Don't even try. Seems I've pissed them off.</p>
+              </div> 
+              <div class="skill-card contact-card">
+                <button class="mybtn-contact">
+                  <a href="https://discord.com/users/200743242143236098"><h1 class="bicon bi-discord"></h1></a>
+                </button>
+                <h3>Discord</h3>
+                <p>It smells in here...</p>
+              </div> 
+              <div class="skill-card contact-card">
+                <button class="mybtn-contact">
+                  <a href="mailto:androong@pm.me"><h1 class="bicon bi-envelope-heart-fill"></h1></a>
+                </button>
+                <h3>Email</h3>
+                <p>Please don't sign me up to any spam lists.</p>
+              </div>
+              <!--
+              <div class="skill-card">
+                <button class="mybtn-contact">
+                  <a><h1 class="bicon bi-twitter"></h1></a>
+                </button>
+                <h3>Twitter</h3>
+                <p>It's always going to be Twitter.</p>
+              </div> 
+              -->
+            </div>
+          </div>
+        </span> <!--end of main :(-->
+      </section>
+    </section>
+    <script src="newshoes.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <div class="superslim-container copyright">
+      <p id="copyright">© Andrew Nguyen 2025</p>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,448 @@
+
+@font-face {
+  font-family: "Windows Regular";
+  src: url("fonts/Windows Regular.ttf") format("embedded-opentype"),
+    url("fonts/Windows Regular.ttf") format("woff2"),
+    url("fonts/Windows Regular.ttf") format("woff"),
+    url("fonts/Windows Regular.ttf") format("truetype"),
+    url("fonts/Windows Regular.ttf") format("svg");
+}
+
+
+html {
+  box-shadow: inset 2px 2px white;
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+  background: lightgray;
+  /*
+  border: solid lightgrey 8px;
+  border-top: 0px;
+  box-shadow: inset 2px 2px gray;
+  */
+}
+
+h1, h2, h3, h4, h5, p {
+  /*I HATE YOU BOOTSTRAP*/
+  font-family: "Times New Roman", Times, serif;
+}
+
+hr {
+  background-color: lightgray;
+  color: gray;
+  border: solid black 2px;
+  width: 100%;
+  height: 3px;
+}
+
+body {
+  background-image: url(assets/hero-img.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+footer {
+  display: flex;
+  background-color: lightgray;
+  box-shadow: inset 0px 2px white;
+  align-content: center;
+  min-height: 32px;
+}
+
+
+#copyright {
+  padding: 8px 0;
+  margin: auto;
+  font-family: "Windows Regular";
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.verticalrule {
+  width: 2px;
+  height: calc(100% - 10px);
+  margin: 5px 0;
+}
+
+.tickerbox {
+}
+
+/* BEGIN div customization*/
+
+.master-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  margin: 0 20px;
+  display: flex;
+  background-color: lightgray;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content:space-between;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 2px 2px black, inset 2px 2px white;
+  max-width: 1320px;
+}
+
+.bigboy-container{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 95%
+  );
+  justify-items: center;
+  width: 100%;
+    padding-bottom: 24px;
+}
+
+.body-container {
+  display: flex;
+  min-width: 400px;
+  padding: 16px;
+  border: solid gray 2px;
+  box-shadow: inset 2px 2px black, 2px 2px white;
+  background-color: white;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+  text-overflow: ellipsis;
+}
+
+.text-container{
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.body-container h1 {
+  margin-bottom: 8px;
+}
+
+.body-container p {
+  text-overflow: ellipsis;
+}
+
+.superwide-container {
+  max-width: none;
+}
+
+.padding {
+  /*push "seemore" button all the way down while keeping scalability. simplistic LOL im proud of this*/
+  min-height: 1px;
+  height: auto;
+  flex-grow: 100;
+  /*background-color: gray;/*debug for scalability testing*/
+}
+
+.superslim-container {
+  flex: 100%;
+  min-height: 30px;
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+.slim-container {
+  flex: 100%;
+  padding: 10px 20px;
+  min-height: 120px;
+  max-height: 360px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-overflow: ellipsis;
+}
+
+.fat-container {
+  flex: 100%;
+  padding: 40px 20px;
+  min-height: 360px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  text-overflow: ellipsis;
+}
+
+.half-container{
+  min-width: 0;
+  flex: 1;
+}
+
+.aboutme-container{
+  align-items: center;
+}
+
+.aboutme-container p {
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-container-container {
+  margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  min-width: 90%;
+  min-height: 80vh;
+  background-image: url(assets/hero-img.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10%;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapse-container{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 14px;
+  width: 100%;
+}
+
+#da-king{
+  display: flex;
+  margin: 0 auto;
+  border: solid white 8px;
+  max-width:fit-content;
+  border-radius: 100%;
+  padding: 8px;
+}
+
+#da-pfp{
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 1;
+}
+
+
+.hero-box{
+  flex-direction: column;
+  min-height: fit-content;
+  max-height: max-content;
+  flex: 1;
+  text-align: center;
+  color: white;
+  box-shadow: 2px 2px black;
+  backdrop-filter: blur(6px);
+  padding: 32px 32px;
+  background: linear-gradient(
+    30deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(128, 128, 128, 0.75) 100%
+  );
+  border: solid gray 2px;
+  box-shadow: inset 2px 2px darkgray, 2px 2px black;
+  min-width: 300px;
+  max-height: 600px;
+  flex-shrink: 1;
+}
+
+#pfp-box{
+  max-width:fit-content;
+  padding: 40px;
+}
+
+#hero-carousel{
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px;
+}
+
+.carousel-item{
+  max-height: 550px;
+}
+
+.carousel-item img{
+  object-fit: cover;
+  height: auto;
+  aspect-ratio: 4/3;
+}
+
+.carousel-caption{
+  background: rgba(36, 12, 12, 0.45);
+  text-shadow: 2px 2px black;
+  box-shadow: inset 2px 2px gray, 2px 2px black;
+  padding: 1em;
+}
+
+.hero-box h1, .hero-box h4{
+  margin-top: 20px;
+  margin-bottom: -15px; /*pure BS but fuck it LOL*/
+  font-family: "Windows Regular";
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px black;
+  gap: 10px;
+}
+
+#tickerbox .text-container p{
+  margin: 20px;
+}
+
+.flexwrap-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.mission-element{
+  flex: 1;
+  flex-basis: 497px;
+  border: solid grey 2px;
+  padding: 1em;
+}
+
+
+#mission-element-right{
+  align-content: center;
+  text-align: center;
+  font-size: larger;
+}
+
+#mission-element-left{
+  background: url("assets/plants.png");
+  background-size: cover;
+  min-height: 400px;
+}
+
+.skill-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border: solid darkgray 2px;
+  box-shadow: inset gray 2px 2px, gray 2px 2px;
+  margin: 10px;
+  min-height: 220px;
+  gap: 20px;
+  text-align: center;
+  justify-content: first baseline;
+  padding: 20px;
+}
+
+.contact-card{
+  min-width: 160px;
+  min-height: 120px;
+}
+
+.skillcard h4 {font-weight: bolder;}
+
+.first-container {
+  display: flex;
+  /*min-width: 40%; test test test!*/
+}
+
+.projects-container {
+  min-width: 98%;
+}
+
+.writings-container {
+}
+
+.contactme-container {
+  text-overflow: ellipsis;
+}
+
+.contactme-child{ /*this name is kinda crazy LOL*/
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-links-container {
+  padding: 0;
+  margin: 10px;
+  border: solid grey 2px;
+  padding: 12px 12px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px 0;
+}
+
+.blinkiespam{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  height:auto;
+}
+
+.blinkiespam > img{
+  height: 31px;
+  width: auto;
+  margin: auto;
+}
+
+.importanttitle{
+  overflow: visible;
+  text-wrap: nowrap;
+}
+
+#fuckyou{
+  background: lightgray;
+  color: black;
+}
+
+#fuckyou:hover h1, #fuckyou:hover{
+  color: red;
+  cursor:not-allowed;
+
+}
+
+@media (max-width: 576px) {
+  /*scalability is so terrible to get right >:(*/
+  .main-container {
+    margin: 0;
+  }
+  .superslim-container{
+    flex-direction: column;
+  }
+  .body-container {
+    min-width: 240px;
+  }
+  .contact-card{
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  /*scalability is so terrible to get right >:(*/
+  .body-container {
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 992px) {
+  /*scalability is so terrible to get right >:(*/
+  .body-container {
+    min-width: 320px;
+  }
+}
