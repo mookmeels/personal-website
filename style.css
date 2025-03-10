@@ -14,11 +14,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
   background: lightgray;
-  /*
-  border: solid lightgrey 8px;
-  border-top: 0px;
-  box-shadow: inset 2px 2px gray;
-  */
 }
 
 h1, h2, h3, h4, h5, p {
@@ -99,13 +94,13 @@ footer {
   );
   justify-items: center;
   width: 100%;
-    padding-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .body-container {
   display: flex;
   min-width: 400px;
-  padding: 16px;
+  padding: 30px;
   border: solid gray 2px;
   box-shadow: inset 2px 2px black, 2px 2px white;
   background-color: white;
@@ -116,8 +111,13 @@ footer {
 }
 
 .text-container{
+  border: solid darkgrey 2px;
+  box-shadow:inset 2px 2px grey, 2px 2px grey;
+  align-content: center;
+  text-align: justify;
+  font-size: larger;
   text-overflow: ellipsis;
-  width: 100%;
+  padding: 1em;
 }
 
 .body-container h1 {
@@ -152,7 +152,6 @@ footer {
   flex: 100%;
   padding: 10px 20px;
   min-height: 120px;
-  max-height: 360px;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -162,7 +161,6 @@ footer {
 
 .fat-container {
   flex: 100%;
-  padding: 40px 20px;
   min-height: 360px;
   flex-direction: column;
   flex-wrap: wrap;
@@ -219,7 +217,7 @@ footer {
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0 14px;
+  gap: 14px;
   width: 100%;
 }
 
@@ -238,7 +236,6 @@ footer {
   height: 100%;
   flex-shrink: 1;
 }
-
 
 .hero-box{
   flex-direction: column;
@@ -310,47 +307,38 @@ footer {
   flex-wrap: wrap;
 }
 
-
-.mission-element{
-  flex: 1;
-  flex-basis: 497px;
-  border: solid grey 2px;
-  padding: 1em;
-}
-
-
-#mission-element-right{
-  align-content: center;
-  text-align: center;
-  font-size: larger;
-}
-
-#mission-element-left{
-  background: url("assets/plants.png");
-  background-size: cover;
-  min-height: 400px;
-}
-
 .skill-card {
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  flex-basis: 140px;
   flex-direction: column;
   border: solid darkgray 2px;
   box-shadow: inset gray 2px 2px, gray 2px 2px;
-  margin: 10px;
   min-height: 220px;
-  gap: 20px;
   text-align: center;
-  justify-content: first baseline;
   padding: 20px;
 }
 
 .contact-card{
   min-width: 160px;
   min-height: 120px;
+  margin: 0 10px;
 }
 
-.skillcard h4 {font-weight: bolder;}
+.skill-card h4 {font-weight: bolder;}
+
+.skills-container{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+#skills .skill-card h4{
+  font-family:Arial, Helvetica, sans-serif;
+
+}
 
 .first-container {
   display: flex;
@@ -431,12 +419,16 @@ footer {
   .contact-card{
     min-width: 240px;
   }
+
 }
 
 @media (max-width: 768px) {
   /*scalability is so terrible to get right >:(*/
   .body-container {
     min-width: 240px;
+  }
+  .text-container{
+    width: 100%;
   }
 }
 

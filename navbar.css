@@ -81,20 +81,13 @@
     );
 }
 
-.mybtn-disabled {
-    /*quietly deprecated*/
-    background-color: gray;
-    box-shadow: inset 2px 2px gray;
-    border: solid black 2px;
-}
-
 .mybtn-split{
     padding: 0;
-    margin: auto;
+    margin: 10px 5px;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    align-self:flex-start;
+    align-self: flex-start;
 }
 
 .mybtn-dropdown{
@@ -121,16 +114,17 @@
     justify-content: center;
 }
 
-#stupidarrow{
+#stupidarrow {
     font-family: "Windows Regular";
     margin: auto;
     margin-right: 0;
 }
 
-#stupidarrow-down{
+#stupidarrow-down {
     font-family: "Windows Regular";
     margin: auto;
 }
+
 
 .mybtn-contact, .mybtn-contact h1 {
     color: black;
@@ -152,7 +146,7 @@
     flex: 1;
 }
 
-.mybtn-img img{
+.mybtn-img img {
     max-height: 100px;
 }
 
