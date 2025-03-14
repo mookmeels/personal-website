@@ -127,7 +127,7 @@
                 style="max-width: 384"
               />
             </div>
-            <h1>Andrew Nguyen</h1>
+            <h1>androong</h1>
             <h4><i>that's me!</i></h4>
           </div>
           <!--
@@ -184,11 +184,11 @@
         <span class="main-container">
           <marqee id="tickerbox" class="body-container fat-container">
             <div>
-              <h1 class="text-center" style="font-family: Arial, sans-serif;"><b>WELCOME TO THE ZOOOONE!</b></h1>
+              <h1 class="text-center" style="font-family: Arial, sans-serif;"><b>Hello World!</b></h1>
               <h4 class="text-center">
                 <b>Congratulations to the 2002 Daytona 500 winner, Ward Burton!</b>
               </h4>
-              <div class="blinkiespam"> 
+              <div class="blinkiespam" style="row-gap: 10px"> 
                 <!--conversion to webp to hopefully minimize load times. love you ffmpeg-->
                 <img src="assets/gifs/animeland.webp" /><img src="assets/gifs/aol-sucks.webp"/>
                 <img src="assets/gifs/chrmevil.webp"/><img src="assets/gifs/2hu.webp"/>
@@ -202,27 +202,44 @@
             <div class="text-container" style="max-width: 80%; margin: auto">
               <h1 class="text-center">About Me</h1>
               <p>
-                Majoring in Computer Engineering over at University of Nevada, Las Vegas - double-minor in Philosophy and Math. Tinkered around with computers ever since I was four. Floated around and saw truth in untruthful places. I'm a top-down systems thinker, bottom-up learner. I make sense of chaos and I make chaos have some sense - to me, at least. </a>
+                Majoring in Computer Engineering over at the University of Nevada, Las Vegas - double-minor in Philosophy and Math. Tinkered around with computers ever since I was four - bypassed my father's administrator lock on my pc - and somewhere along the way, I started floating...floated around and saw truth in untruthful places. Top-down systems thinker, bottom-up learner. If I'm not <i>doing</i>, then I'm thinking. 
+                <br/>
+                Burnout recovery is no joke - please stand by!
               </p>
             </div>      
           </marqee>
           <div
-            class="body-container fat-container half-container mission-container"
-            id="mission"
-          >
+            class="body-container half-container mission-container"
+            id="mission">
             <h1 class="text-center">My Mission</h1>
-            <p class="text-center">I'm no LinkedIn Lunatic.</p>
+            <p class="text-center" style="margin: 0.5rem">I'm no LinkedIn Lunatic.</p>
             <div class="collapse-container">
               <div class="text-container">
+                <h3 class="text-center">
+                  Public-Facing Mission
+                </h3>
                 <p class="text-center">
-                   Do the thing - do it right. We have this infinite web of connections in the real world. Let's use them to solve problems.
+                  Shine a two-dimensional flashlight onto a dark object from multiple angles. What do you see? A three-dimensional object.
+                  <br/>
+                  <i>
+
+                  </i>
                 </p>
+              </div>
+              <div class="text-container">
+                <h3 class="text-center">
+                  Actual Mission
+                </h3>
+                <p class="text-center">
+                  i'm here to zap you with my mind beam!!
+                </p>
+                <img src="assets/junk/obama.jpg" style="width: 50%;"/>
               </div>
             </div>
           </div>
           <div id="skills" class="body-container half-container skills-container">
             <h1 class="text-center">Skills</h1>
-            <p class="text-center">What makes you tick?</p>
+            <p class="text-center">I'm big on institutional thinking: top-down systems and structural analysis. <a href="">Web-thinking</a> as a way to process before "fully" understanding something.</p>
             <div class="flexwrap-container"> <!--lol-->
               <div class="collapse-container" id="skills">
                 <div class="skill-card">
@@ -239,16 +256,20 @@
                 </div>
                 <div class="skill-card">
                     <h4 style="background-color: #F7DF1E">JavaScript</h4>
-                    <p>JavaScript :)</p>
+                    <p>JavaScript :D</p>
                 </div>
+                <div class="skill-card">
+                  <h4 style="background-color: #9111b7; color: white;">Reading</h4>
+                  <p>Hey, no joke! Modding Skyrim takes time.</p>
+              </div>
               </div>
             </div>
             <div class="padding" id="navbarpadder"></div>
             <button href="" class="mybtn mybtn-body">See more...</button>
           </div>
           <div id="projects" class="body-container fat-container projects-container">
-            <h1 class="text-center">Projects</h1>
-            <p class="text-center">Here lies my projects, a muse never used. 
+            <h1 class="text-center">Works</h1>
+            <p class="text-center">Here lies my works, a muse never used. 
               A collection built with my own bare hands - you know, this is the kind of stuff that keeps brains alive. Doing projects, that is.</p>
             <div class="projects-links-container">
               <a
@@ -297,7 +318,7 @@
           </div>
           <article class="body-container first-container" id="first">
             <h1>Test of the 1st space</h1>
-            <div class="text-container">
+            <div>
               <p>
                 Personally, I really believe that web design was better when
                 everything looked a lot more uglier, cluttered, and
@@ -308,7 +329,7 @@
             </div>
             <hr />
             <h1>Test of the 2nd space</h1>
-            <div class="text-container">
+            <div>
               <p>
                 There is no difference between a man who doesn't try and a man
                 who can't try.
@@ -406,13 +427,12 @@
             <div class="padding"></div>
             <button class="mybtn mybtn-body">See more...</button>
           </div>
-          <span class="body-container d-flex align-items-center justify-content-center text-center" style="padding: 3rem 1rem;">
-            <div id="crying-container">
+            <span class="body-container align-items-center justify-content-center text-center" id="crying-container" >
               <h1 class="display-1 text-danger fw-bold">😭</h1>
               <h2 class="fw-light text-muted">giving up in progress...</h2>
               <p class="text-danger">longest breakdown: <span id="high-score">0</span> seconds</p>
               <button class="mybtn btn-primary btn-lg mt-3" onclick="startCrying()">start breakdown</button>
-            </div>
+            </span>
             <script>
               let timer; // store the interval
               let seconds = 0;
@@ -456,7 +476,6 @@
                   }
               }
             </script>
-          </span>
           <div
             class="body-container fat-container contactme-container"
             id="contactme"
@@ -489,7 +508,7 @@
                   <a href="mailto:androong@pm.me"><h1 class="bicon bi-envelope-heart-fill"></h1></a>
                 </button>
                 <h3>Email</h3>
-                <p>Please don't sign me up to any spam lists.</p>
+                <p>This is the most professional way to contact me. Please do not ruin it.</p>
               </div>
               <!--
               <div class="skill-card">

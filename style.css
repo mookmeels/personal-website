@@ -55,6 +55,18 @@ footer {
   text-align: center;
 }
 
+p a{
+  background-color: skyblue;
+  color: blue;
+
+}
+
+p a::after{
+  background-color: lightpink;
+  color: purple;
+  
+}
+
 .verticalrule {
   width: 2px;
   height: calc(100% - 10px);
@@ -117,6 +129,7 @@ footer {
   text-align: justify;
   font-size: larger;
   text-overflow: ellipsis;
+  width: 100%;
   padding: 1em;
 }
 
@@ -409,6 +422,12 @@ footer {
   /*scalability is so terrible to get right >:(*/
   .main-container {
     margin: 0;
+    padding: 10px 0;
+    border: 0;
+  }
+  .bigboy-container{
+    padding: 0;
+    border: 0;
   }
   .superslim-container{
     flex-direction: column;
@@ -419,7 +438,10 @@ footer {
   .contact-card{
     min-width: 240px;
   }
-
+  .text-container{
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -429,6 +451,8 @@ footer {
   }
   .text-container{
     width: 100%;
+    margin: 0;
+    padding: 1rem 0.1rem;
   }
 }
 
